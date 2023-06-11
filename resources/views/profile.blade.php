@@ -3,6 +3,7 @@
 PROFILE PAGE
 @endsection
 @section('content')
+
 <div class="jumbotron jumbotron-fluid bg-danger">
   <div class="container">
     <h1 class="text-white">THIS IS PROFILE PAGE</h1>

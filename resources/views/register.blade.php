@@ -1,6 +1,6 @@
 @extends('layout.app')
 @section('title')
-LOG IN PAGE
+REGISTER PAGE
 @endsection
 @section('content')
 <div class="jumbotron jumbotron-fluid bg-info ">
@@ -10,13 +10,13 @@ LOG IN PAGE
       REGISTER
     </div>
     <div class="card-body">
-    <form action="{{route('login.submit')}}" method="post">
+    <form action="{{route('register')}}" method="post">
       @csrf
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" class="form-control"  name="name" id="name">
       </div>
-    <div class="form-group">
+      <div class="form-group">
         <label for="username">Username</label>
         <input type="text" class="form-control"  name="username" id="username">
       </div>
@@ -25,7 +25,7 @@ LOG IN PAGE
         <input type="password" class="form-control"  name="password" id="password">
       </div>
       <button class="btn btn-primary">Submit</button>
-  </form>
+    </form>
     </div>
   </div>
   </div>

@@ -33,3 +33,4 @@ Route::post('/login',[authController::class,'login'])->name('login.submit');
 Route::get('/logout',[authController::class,'logout'])->middleware('auth')->name('logout');
 
 Route::get('/register',[authController::class,'register'])->name('register');
+Route::post('/register',[authController::class,'register_user'])->name('register');
